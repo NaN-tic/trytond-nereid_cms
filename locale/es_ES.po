@@ -1,0 +1,291 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:nereid.cms.article:"
+msgid "The Unique Name of the Article must be unique."
+msgstr "El nombre del artículo debe ser único."
+
+msgctxt "error:nereid.cms.article:"
+msgid ""
+"You can not delete articles because you will get error 404 NOT Found. "
+"Dissable active field."
+msgstr ""
+"No puede eliminar este artículo por que obtendria un error 404 NOT Found. "
+"Desactive el campo estado."
+
+msgctxt "field:nereid.cms.article,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:nereid.cms.article,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:nereid.cms.article,description:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "field:nereid.cms.article,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:nereid.cms.article,metadescription:"
+msgid "Meta Description"
+msgstr "Meta Description"
+
+msgctxt "field:nereid.cms.article,metakeywords:"
+msgid "Meta Keywords"
+msgstr "Meta Keywords"
+
+msgctxt "field:nereid.cms.article,metatitle:"
+msgid "Meta Title"
+msgstr "Meta Title"
+
+msgctxt "field:nereid.cms.article,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:nereid.cms.article,status:"
+msgid "Status"
+msgstr "Estado"
+
+msgctxt "field:nereid.cms.article,template:"
+msgid "Template"
+msgstr "Plantilla"
+
+msgctxt "field:nereid.cms.article,title:"
+msgid "Title"
+msgstr "Título"
+
+msgctxt "field:nereid.cms.article,uri:"
+msgid "URI"
+msgstr "URI"
+
+msgctxt "field:nereid.cms.article,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:nereid.cms.article,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:nereid.cms.banner,active:"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "field:nereid.cms.banner,alternative_text:"
+msgid "Alternative Text"
+msgstr "Texto alternativo"
+
+msgctxt "field:nereid.cms.banner,click_url:"
+msgid "Click URL"
+msgstr "URL destino"
+
+msgctxt "field:nereid.cms.banner,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:nereid.cms.banner,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:nereid.cms.banner,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:nereid.cms.banner,custom_code:"
+msgid "Custom Code"
+msgstr "Código personalizado"
+
+msgctxt "field:nereid.cms.banner,file:"
+msgid "File"
+msgstr "Archivo"
+
+msgctxt "field:nereid.cms.banner,height:"
+msgid "Height"
+msgstr "Alto"
+
+msgctxt "field:nereid.cms.banner,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:nereid.cms.banner,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:nereid.cms.banner,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:nereid.cms.banner,remote_image_url:"
+msgid "Remote Image URL"
+msgstr "URL imagen remota"
+
+msgctxt "field:nereid.cms.banner,type:"
+msgid "Type"
+msgstr "Tipo"
+
+msgctxt "field:nereid.cms.banner,width:"
+msgid "Width"
+msgstr "Ancho"
+
+msgctxt "field:nereid.cms.banner,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:nereid.cms.banner,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:nereid.cms.menu,active:"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "field:nereid.cms.menu,childs:"
+msgid "Children"
+msgstr "Hijos"
+
+msgctxt "field:nereid.cms.menu,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "field:nereid.cms.menu,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:nereid.cms.menu,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:nereid.cms.menu,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:nereid.cms.menu,left:"
+msgid "Left"
+msgstr "Izquierda"
+
+msgctxt "field:nereid.cms.menu,parent:"
+msgid "Parent"
+msgstr "Padre"
+
+msgctxt "field:nereid.cms.menu,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:nereid.cms.menu,right:"
+msgid "Right"
+msgstr "Derecha"
+
+msgctxt "field:nereid.cms.menu,sequence:"
+msgid "Sequence"
+msgstr "Secuencia"
+
+msgctxt "field:nereid.cms.menu,title:"
+msgid "Title"
+msgstr "Título"
+
+msgctxt "field:nereid.cms.menu,uri:"
+msgid "URI"
+msgstr "URI"
+
+msgctxt "field:nereid.cms.menu,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:nereid.cms.menu,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "help:nereid.cms.article,metadescription:"
+msgid ""
+"Almost all search engines recommend it to be shorter than 155 characters of "
+"plain text"
+msgstr ""
+"La mayoría de buscadores recomiendan una descripción de 155 carácteres de "
+"texto plan"
+
+msgctxt "help:nereid.cms.article,metakeywords:"
+msgid "Separated by comma"
+msgstr "Separado por coma"
+
+msgctxt "help:nereid.cms.article,status:"
+msgid "Dissable to not show content article"
+msgstr "Desactivar para no mostrar el contenido del artículo"
+
+msgctxt "help:nereid.cms.article,uri:"
+msgid "Unique Name is used as the uri."
+msgstr "El nombre único es usado en la uri."
+
+msgctxt "help:nereid.cms.banner,code:"
+msgid "Internal code."
+msgstr "Código interno."
+
+msgctxt "help:nereid.cms.menu,code:"
+msgid "Internal code."
+msgstr "Código interno."
+
+msgctxt "help:nereid.cms.menu,uri:"
+msgid "Uri menu."
+msgstr "URI menú"
+
+msgctxt "model:ir.action,name:act_cms_article_form"
+msgid "Articles"
+msgstr "Artículos"
+
+msgctxt "model:ir.action,name:act_cms_banner_form"
+msgid "Banners"
+msgstr "Banners"
+
+msgctxt "model:ir.action,name:act_cms_menu_form"
+msgid "Menus"
+msgstr "Menús"
+
+msgctxt "model:ir.action,name:act_cms_menu_tree"
+msgid "Menus"
+msgstr "Menús"
+
+msgctxt "model:ir.ui.menu,name:menu_cms_article_form"
+msgid "Articles"
+msgstr "Artículos"
+
+msgctxt "model:ir.ui.menu,name:menu_cms_banner_form"
+msgid "Banners"
+msgstr "Banners"
+
+msgctxt "model:ir.ui.menu,name:menu_cms_menu_form"
+msgid "Menus"
+msgstr "Menús"
+
+msgctxt "model:ir.ui.menu,name:menu_cms_menu_tree"
+msgid "Menus"
+msgstr "Menús"
+
+msgctxt "model:ir.ui.menu,name:menu_nereid_cms"
+msgid "CMS"
+msgstr "CMS"
+
+msgctxt "model:nereid.cms.article,name:"
+msgid "Article CMS"
+msgstr "Artículo CMS"
+
+msgctxt "model:nereid.cms.banner,name:"
+msgid "Banner CMS"
+msgstr "Banner CMS"
+
+msgctxt "model:nereid.cms.menu,name:"
+msgid "Menu CMS"
+msgstr "Menú CMS"
+
+msgctxt "selection:nereid.cms.banner,type:"
+msgid "Custom Code"
+msgstr "Código personalizado"
+
+msgctxt "selection:nereid.cms.banner,type:"
+msgid "Image"
+msgstr "Imágenes"
+
+msgctxt "selection:nereid.cms.banner,type:"
+msgid "Remote Image"
+msgstr "Imagen remota"

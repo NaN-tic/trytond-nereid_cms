@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- This file is part nereid_cms of Tryton. The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form string="Banner">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="code"/>
+    <field name="code"/>
+    <label name="type"/>
+    <field name="type"/>
+    <label name="click_url"/>
+    <field name="click_url"/>
+    <label name="active"/>
+    <field name="active"/>
+    <notebook colspan="4">
+        <page string="Banner" id="banner">
+            <label name="file"/>
+            <field name="file"/>
+            <label name="remote_image_url"/>
+            <field name="remote_image_url"/>
+            <label name="custom_code"/>
+            <field name="custom_code"/>
+            <label name="height"/>
+            <field name="height"/>
+            <label name="width"/>
+            <field name="width"/>
+        </page>
+        <page string="SEO" id="seo">
+            <label name="alternative_text"/>
+            <field name="alternative_text"/>
+        </page>
+    </notebook>
+</form>
