@@ -14,7 +14,7 @@ from trytond.pyson import Eval, Not, Equal, Bool, In
 from trytond.model import ModelSQL, ModelView, fields
 from trytond.transaction import Transaction
 from trytond.pool import Pool
-from trytond.backend import TableHandler
+from trytond import backend
 
 __all__ = ['Menu', 'Article', 'Banner']
 
@@ -34,9 +34,12 @@ class Menu(ModelSQL, ModelView):
     left = fields.Integer('Left', required=True, select=True)
     right = fields.Integer('Right', required=True, select=True)
     childs = fields.One2Many('nereid.cms.menu', 'parent', 'Children')
-    sequence = fields.Integer('Sequence',
-        order_field='(%(table)s.sequence IS NULL) %(order)s, '
-        '%(table)s.sequence %(order)s')
+    sequence = fields.Integer('Sequence')
+
+    @staticmethod
+    def order_sequence(tables):
+        table, _ = tables[None]
+        return [table.sequence == None, table.sequence]
 
     @staticmethod
     def default_active():
@@ -62,6 +65,7 @@ class Menu(ModelSQL, ModelView):
         super(Menu, cls).__register__(module_name)
         cursor = Transaction().cursor
 
+        TableHandler = backend.get('TableHandler')
         table = TableHandler(cursor, cls, module_name)
         table.index_action(['left', 'right'], 'add')
 
