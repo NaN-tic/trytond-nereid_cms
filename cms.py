@@ -1,19 +1,13 @@
 #This file is part nereid_cms module for Tryton.
 #The COPYRIGHT file at the top level of this repository contains 
 #the full copyright notices and license terms.
+from nereid import render_template
+from nereid.helpers import slugify, url_for
+from werkzeug.exceptions import NotFound
 
-from string import Template
-
-from nereid import render_template, current_app, cache, request
-from nereid.helpers import slugify, url_for, key_from_list
-from nereid.contrib.pagination import Pagination
-from nereid.contrib.sitemap import SitemapIndex, SitemapSection
-from werkzeug.exceptions import NotFound, InternalServerError
-
-from trytond.pyson import Eval, Not, Equal, Bool, In
+from trytond.pyson import Eval, Not, Equal, In
 from trytond.model import ModelSQL, ModelView, fields
 from trytond.transaction import Transaction
-from trytond.pool import Pool
 from trytond import backend
 
 __all__ = ['Menu', 'Article', 'Banner']
@@ -146,7 +140,7 @@ class Article(ModelSQL, ModelView):
         new_posts = []
         for post in posts:
             default['uri'] = '%s-copy' % post.uri
-            new_post, = super(Post, cls).copy([post], default=default)
+            new_post, = super(Article, cls).copy([post], default=default)
             new_posts.append(new_post)
         return new_posts
 
