@@ -28,7 +28,7 @@
         <record model="ir.action.act_window" id="act_cms_menu_tree">
             <field name="name">Menus</field>
             <field name="res_model">nereid.cms.menu</field>
-            <field name="domain">[('parent', '=', False)]</field>
+            <field name="domain">[('parent', '=', None)]</field>
         </record>
         <record model="ir.action.act_window.view" id="act_cms_menu_tree_view1">
             <field name="sequence" eval="10"/>
