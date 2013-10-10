@@ -1,0 +1,19 @@
+{% extends 'base.jinja' %}
+{% from '_helpers.jinja' import render_keywords with context %}
+
+{% block metadescription %}{% if article.metadescription %}{{ article.metadescription }}{% else %}{{ article.title }}{% endif %}{% endblock %}
+{% block metakeywords %}{% if article.metakeywords %}{{ article.metakeywords }}{% endif %}{% endblock %}
+{% block metatitle %}{% if article.metatitle %}{{ article.metatitle }}{% else %}{{ article.title }}{% endif %}{% endblock %}
+{% block canonical %}{{ url_for('nereid.cms.article.render', uri=article.uri) }}{% endblock %}
+
+{% block main %}
+{% include 'nav.jinja' %}
+<div class="row">
+    <div class="span12 article">
+        <h2>{{ article.title }}</h2>
+        <div id="article">
+            {% if article.status %}{{ article.description|safe }}{% else %}<span class="alert">{{ _('Article content is dissabled') }}</span>{% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
