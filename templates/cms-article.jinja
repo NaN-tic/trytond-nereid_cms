@@ -8,6 +8,7 @@
 {% block canonical %}{{ url_for('nereid.cms.article.render', uri=article.uri) }}{% endblock %}
 
 {% block main %}
+{% set bread_crumbs = [(url_for('nereid.website.home'), _('Home')), (url_for('nereid.cms.article.render', uri=article.uri), article.title)] %}
 {% include 'nav.jinja' %}
 <div class="row">
     <div class="span12 article">
