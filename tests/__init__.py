@@ -2,3 +2,5 @@
 # copyright notices and license terms.
 
 from .test_nereid_cms import suite
+
+__all__ = ['suite']
