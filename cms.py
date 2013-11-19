@@ -54,15 +54,6 @@ class Menu(ModelSQL, ModelView):
         cls._order.insert(0, ('sequence', 'ASC'))
         cls._order.insert(1, ('id', 'ASC'))
 
-    @classmethod
-    def __register__(cls, module_name):
-        super(Menu, cls).__register__(module_name)
-        cursor = Transaction().cursor
-
-        TableHandler = backend.get('TableHandler')
-        table = TableHandler(cursor, cls, module_name)
-        table.index_action(['left', 'right'], 'add')
-
     def on_change_title(self):
         res = {}
         if self.title and not self.code:
